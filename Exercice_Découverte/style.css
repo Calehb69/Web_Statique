@@ -1,0 +1,39 @@
+.couleurTexte
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.texteRouge 
+{
+    color:red;
+}
+
+.texteBleu
+{
+    color: blue;
+}
+
+.texteVert
+{
+    color: green;
+}
+
+.couleurFond
+{
+    font-family: monospace;
+}
+
+.fondRouge
+{
+    background-color: red;
+}
+
+.fondBleu
+{
+    background-color: blue;
+}
+
+.fondVert
+{
+    background-color: green;
+}
