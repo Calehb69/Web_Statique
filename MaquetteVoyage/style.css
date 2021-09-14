@@ -47,7 +47,8 @@ body
 
 #destinations img 
 {
-    width: 30%;
+    width: 33%;
+    padding-right: 80px;
 }
 
 #destinations h2
