@@ -1,0 +1,171 @@
+/*********************
+*CSS GLOBALES
+**********************/
+
+h1
+{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+/*********************
+*CLASSES GLOBALES
+**********************/
+.container
+{
+    border: 10px solid red;
+    max-width: 1060px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*********************
+*CSS PAR SECTION
+**********************/
+
+header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(img/detoxcuresmoothie.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+header img
+{
+    width: 60%;
+}
+
+header nav ul li
+{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header h1 
+{
+  padding-bottom: 50px;
+  padding-top: 150px;
+}
+
+/*********************
+*SECTION DEVISE
+**********************/
+
+#devise
+{
+    display: flex;
+    align-content: center;
+}
+
+#devise img
+{
+    width: 25%;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#notreDevise h2 
+{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#notreDevise p 
+{
+  font-size: 13px;
+}
+
+/*********************
+*SECTION FABRICATION
+**********************/
+
+#fabrication
+{
+    background: linear-gradient(#feb4c3, #f59e28);
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#fabrication h2
+{
+    margin-left: 4%;
+}
+
+#process 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#process img
+{
+   width: 5%;
+  padding-top: 50px;
+}
+
+/*********************
+*SECTION CONCEPT
+**********************/
+#concept 
+{
+  text-align: center;
+}
+
+#concepts ul
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+/*********************
+*SECTION FOOTER
+**********************/
+footer 
+{
+  background-color: #f59e28;
+  color: white;
+  text-align: center;
+  font-size: 8px;
+  padding: 5px;
+}
+
+/*********************
+*CSS RESPONSIVE ; CSS QUI S'APPLIQUERA DE 0px à 767px= AFFICHAGE MOBILE
+**********************/
+@media (max-width: 767px) {
+  #devise {
+    flex-direction: column;
+  }
+  #notreDevise {
+  margin-left: 0;
+}
+
+#concepts {
+  flex-direction: column;
+}
+
+header img {
+  margin-right: 100px;
+}
+}
