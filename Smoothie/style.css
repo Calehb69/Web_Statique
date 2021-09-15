@@ -15,7 +15,6 @@ h1
 **********************/
 .container
 {
-    border: 10px solid red;
     max-width: 1060px;
     width: 80%;
     margin-right: auto;
@@ -69,22 +68,19 @@ header h1
 #devise
 {
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 
 #devise img
 {
     width: 25%;
-    padding-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 #notreDevise h2 
 {
   font-size: 18px;
   text-align: center;
-  margin-top: 80px;
 }
 
 #notreDevise p 
@@ -153,19 +149,25 @@ footer
 /*********************
 *CSS RESPONSIVE ; CSS QUI S'APPLIQUERA DE 0px à 767px= AFFICHAGE MOBILE
 **********************/
-@media (max-width: 767px) {
-  #devise {
+@media (max-width: 767px) 
+{
+#devise 
+{
     flex-direction: column;
-  }
-  #notreDevise {
-  margin-left: 0;
 }
 
-#concepts {
+#devise img
+{
+   margin: 0;
+}
+
+#concepts ul 
+{
   flex-direction: column;
 }
 
-header img {
+header img 
+{
   margin-right: 100px;
 }
 }
