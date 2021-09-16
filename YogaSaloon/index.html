@@ -1,42 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
-  <title>Yoga Saloon</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yoga Saloon</title>
+  </head>
 
-<body>
-  <header>
+  <body>
+    <header>
       <nav>
-        <a href="#"><img src="img/logo.png" alt="logoBlanc"></a>
+        <a href="#"><img src="img/logo.png" alt="logoBlanc" /></a>
         <ul>
           <li><a href="#">Concept</a></li>
           <li><a href="#">Cours</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <h1>YOGASALOON</h1>
-      <h3>Votre salon de yoga détente et apéro rigolo !</h3>
-      <a href="#" class="btn">Découvrir</a>
-  </header>
+      <div class="titre">
+        <h1>YOGASALOON</h1>
+        <p>Votre salon de yoga détente et apéro rigolo !</p>
+        <a href="#" class="btn">Découvrir</a>
+      </div>
+    </header>
 
-  <section id="concept">
-    <h2>Le concept YOGASALOON</h2>
+    <main>
+      <section id="concept">
+        <h2>Le concept YOGASALOON</h2>
 
-  </section>
+        <article>
+          <img src="img/mat@2x.png" alt="matelas" />
+          <div>
+            <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa
+              sint optio voluptate cum, ex illum explicabo omnis iste delectus
+              doloreofficiadignissimos eius ducimus quam hic, id qui
+              consequatur!
+            </p>
+          </div>
+        </article>
 
-  
-</body>
+        <article>
+          <img src="img/drink-list@2x.png" alt="drinkMenu" />
+          <div>
+            <h3>
+              Détendez vous après la séance en choisissant votre boissonparmis
+              un large choix
+            </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum,
+              iure enim? Cumque possimus deserunt eaque eos nostrum, libero
+              optio dolorem quas, labore distinctio commodi totam, consequatur
+              mollitia neque assumenda veniam?
+            </p>
+          </div>
+        </article>
 
+        <article>
+          <img src="img/drink@2x.png" alt="drink" />
+          <div>
+            <h3>
+              Dégustez votre boisson avec des accompagnements healthy faits
+              maison
+            </h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+              saepe autem maiores quo corrupti debitis recusandae exercitationem
+              placeat? Debitis quis et exercitationem aliquid sint, iste nobis
+              ratione expedita. Adipisci, quibusdam.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="cours">
+        <h2>Les cours YOGASALOON</h2>
+        <article>
+          <img src="../img/yoga.jpg" alt="yoga" />
+          <div>
+            <h3>Du vinyasa en veux tu en voilà</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+              delectus debitis saepe assumenda dignissimos modi? Consequatur
+              blanditiis commodi magni, veritatis placeat quos natus. Aspernatur
+              porro laudantium dolorum modi facilis perferendis!
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact - suivre un cours</h2>
+        <form>
+          <ul>
+            <li>
+              <p>Être rappelé :</p>
+              <input
+                type="radio"
+                id="aujourd'hui"
+                value="Aujourd'hui"
+                name="call"
+              />
+              <label class="btn" for="aujourd'hui">Aujourd'hui </label>
+              <input
+                type="radio"
+                id="demain"
+                value="Demain"
+                name="call"
+              /><label class="btn" for="demain">Demain</label>
+              <input
+                type="radio"
+                id="plus_tard"
+                value="Plus tard"
+                name="call"
+              /><label class="btn" for="plus_tard">Plus tard</label>
+            </li>
+            <li>
+              <input type="text" name="name" placeholder="Nom Prénom" />
+            </li>
+            <li>
+              <input type="email" name="email" placeholder="Email" />
+            </li>
+            <li>
+              <label for="choice">Vous êtes intéressé par :</label>
+              <select name="choice" id="choice">
+                <option value="yoga 1">Yoga 1</option>
+                <option value="yoga 2">Yoga 2</option>
+                <option value="yoga 3">Yoga 3</option>
+              </select>
+            </li>
+            <li>
+              <input type="submit" value="Envoyer" class="btn" />
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <footer>2019©AH</footer>
+  </body>
 </html>
