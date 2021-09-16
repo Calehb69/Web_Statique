@@ -196,14 +196,31 @@ footer {
 *CSS RESPONSIVE - SECTION MOBILE DE 0px à 767px
 ***********************************************/
 @media (max-width: 767px) {
+  header .titre h1{
+    font-size: 40px;
+  }
+
   #concept article, #concept article:nth-of-type(odd), #cours article {
   flex-direction: column;
   }
 
   #cours div{text-align: center;
   }
+
+  #cours article img{
+    margin-right: 0;
+  }
+
+  #contact form ul li:first-of-type{
+    flex-wrap: wrap;
+  }
 }
 
-/**********************************************
-*CSS RESPONSIVE - SECTION TABLETTE DE 
-***********************************************/
+/**************************************************
+*CSS RESPONSIVE - SECTION TABLETTE DE 768px à 990px
+***************************************************/
+@media (min-width:768px) and (max-width: 990px){
+  #cours article {
+    align-items: flex-start;
+  }
+}
