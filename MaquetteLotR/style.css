@@ -1,0 +1,59 @@
+/*************
+CSS GLOBAL
+**************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 160%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Unicase", serif;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+main > section {
+  margin-top: 80px;
+}
+
+img[src*="logo"] {
+  height: 100px;
+}
+
+/**************
+CSS GENERAL
+***************/
+
+.container {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/**************
+CSS PAR SECTION
+***************/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(../img/perso.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px 0;
+}
