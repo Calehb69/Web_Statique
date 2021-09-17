@@ -1,0 +1,229 @@
+/**********************
+CSS GLOBALE
+***********************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap');
+
+.btn {
+  background-color: rgb(124, 40, 99);
+  padding: 8px 12px;
+}
+
+.btn:hover {
+  background-color: (86, 21, 66);
+}
+
+/**********************
+TYPOGRAPHIE
+***********************/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/**********************
+CSS GENERAL
+***********************/
+
+img[src*='@2x'] {
+  width: 40px;
+}
+
+/**********************
+CSS PAR SECTION
+**********************/
+
+/**********************
+SECTION HEADER
+**********************/
+header {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/fitness.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  width: 60px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+header div {
+  text-align: center;
+  margin: 100px 0 200px;
+}
+
+header div h1 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  line-height: 100%;
+}
+
+header div p {
+  font-weight: 700;
+  font-size: 20;
+  margin-top: 1%;
+}
+
+/*************************
+SECTION IMAGE SOUS HEADER
+*************************/
+.crossfit {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/fitnessman.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 70px 100px;
+}
+
+.fullboy {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/fitnesswoman.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 70px 100px;
+}
+
+.sousHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: -120px;
+}
+
+/*********************
+SECTION OBJECTPROG
+**********************/
+.objectProg {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/************************
+SECTION QUATREIMAGES
+*************************/
+.quatreImages nav ul {
+  display: flex;
+  padding: auto;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.quatreImages nav ul li {
+  width: 25%;
+  text-align: center;
+  border-top: rgb(208, 207, 207) solid 1px;
+  border-left: rgb(208, 207, 207) solid 1px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.quatreicones nav ul li:first-child {
+  border-left: none;
+}
+
+.quatreicones nav ul li img {
+  width: 40px;
+  margin-top: 50px;
+}
+
+/************************
+SECTION FITNESS
+*************************/
+.fitness {
+  background-image: linear-gradient(
+      to right,
+      rgba(124, 40, 99, 0.233) 60%,
+      rgb(0, 0, 0) 40%
+    ),
+    url(../img/crossfit.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 10px;
+  color: white;
+}
+
+.fitness div {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 70%;
+}
+
+.fitness h1 {
+  margin-left: -70%;
+}
+
+.fitness div a {
+  display: flex;
+  margin-right: 70%;
+}
+
+/************************
+SECTION SIX IMAGES
+*************************/
+
+.sixImages nav ul {
+  display: flex;
+  padding: auto;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.sixImages nav ul li {
+  display: flex;
+  width: calc(100% / 3);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sixImages li:nth-child(2n + 1) {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.sixImages p {
+  display: flex;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/************************
+SECTION FOOTER
+*************************/
