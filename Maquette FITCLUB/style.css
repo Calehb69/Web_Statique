@@ -40,7 +40,7 @@ header {
       rgba(124, 40, 99, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/fitness.jpg);
+    url(img/fitness.jpg);
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
@@ -94,7 +94,7 @@ SECTION IMAGE SOUS HEADER
       rgba(124, 40, 99, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/fitnessman.jpg);
+    url(img/fitnessman.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -108,7 +108,7 @@ SECTION IMAGE SOUS HEADER
       rgba(124, 40, 99, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/fitnesswoman.jpg);
+    url(img/fitnesswoman.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -168,7 +168,7 @@ SECTION FITNESS
       rgba(124, 40, 99, 0.233) 60%,
       rgb(0, 0, 0) 40%
     ),
-    url(../img/crossfit.jpg);
+    url(img/crossfit.jpg);
   background-size: cover;
   background-position: center;
   padding: 100px 10px;
@@ -209,8 +209,7 @@ SECTION SIX IMAGES
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 50px, 30px;
 }
 
 .sixImages li:nth-child(2n + 1) {
@@ -227,3 +226,79 @@ SECTION SIX IMAGES
 /************************
 SECTION FOOTER
 *************************/
+footer{
+  background: black;
+  border-top: 10px solid rgb(124, 40, 99);
+  color: white;
+  padding: 20px 0;
+}
+
+/*footer .container {} */
+footer > div{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+footer i {
+  font-size: 20px;
+}
+font article, footer aside {
+  width: 24%;
+}
+footer article {
+  text-align: right;
+}
+footer article img {
+  height: 50px;
+}
+footer article ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer form{
+  background: white;
+  color: black;
+  padding: 60px 50 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  margin-top: -150px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer form h2{
+  text-transform: uppercase;
+}
+
+footer form input[type="text"]{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 30px 0;
+  padding: 5px;
+}
+footer form input[type="text"]::placeholder{
+  color: black;
+}
+footer form input[type="submit"]{
+  border: none;
+  padding: 20px;
+  margin-top: 30px;
+}
+footer aside ul li {
+  display: flex;
+  align-items: baseline;
+}
+footer aside ul li i {
+  color: rgba(124, 40, 99);
+  margin-right: 15px;
+}
+footer aside ul li h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
