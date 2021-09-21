@@ -58,10 +58,64 @@ header {
   color: white;
   padding: 20px 0;
 }
-/*****SECTION AVENTURE*****/
 
-#aventure{
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 18px;
+}
+
+header nav * {
+  margin: 0 15px;
+}
+
+header .txt {
+margin: 150px 0 180px;
+text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+/**************
+SECTION MAIN
+***************/
+
+/*****SECTION AVENTURE*****/
+#adventure h2, #adventure p {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#adventure ol {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: perso-counter;
+  list-style: none;
+  margin-top: 50px;
+}
+
+#adventure ol li {
+  counter-increment: perso-counter;
+  position: relative;
+  width: 30%;
+}
+
+#adventure ol li h3 {
+  margin-left: 20px;
+}
+
+#adventure ol li::before {
+  content: "0" counter(perso-counter);
+  font-weight: bold;
+  font-family: "Cormorant Unicase", serif;
+  position: absolute;
+  color: rgba(79, 17, 34, 0.2);
+  font-size: 90px;
+  top: 10px;
 }
