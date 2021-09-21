@@ -234,71 +234,189 @@ footer{
 }
 
 /*footer .container {} */
-footer > div{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+footer {
+  background: black;
+  border-top: 10px solid rgb(124, 40, 99);
+  color: white;
+  padding: 20px 0;
 }
 
-footer i {
-  font-size: 20px;
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-font article, footer aside {
-  width: 24%;
-}
+
 footer article {
+  width: 25%;
   text-align: right;
 }
 footer article img {
-  height: 50px;
+  height: 60px;
 }
-footer article ul li {
-  display: inline-block;
-  margin-left: 10px;
+footer article a {
+  margin: 0 5px;
+  font-size: 20px;
 }
 
-footer form{
+footer form {
+  width: 45%;
   background: white;
   color: black;
-  padding: 60px 50 80px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 48%;
-  margin-top: -150px;
+  padding: 30px 50px;
+  margin-top: -100px;
   position: relative;
   z-index: 1;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
 }
-
-footer form h2{
+footer form h2 {
   text-transform: uppercase;
 }
 
-footer form input[type="text"]{
+footer form input:not([type="submit"]) {
   width: 100%;
+  margin: 20px 0;
   border: none;
   border-bottom: 1px solid black;
-  margin: 30px 0;
   padding: 5px;
 }
-footer form input[type="text"]::placeholder{
+footer form ::placeholder {
   color: black;
+  font-size: 13px;
 }
-footer form input[type="submit"]{
+footer form input[type="submit"] {
+  color: white;
   border: none;
-  padding: 20px;
-  margin-top: 30px;
+  cursor: pointer;
+  margin-top: 20px;
 }
-footer aside ul li {
+
+footer ul {
+  width: 25%;
+}
+
+footer ul li {
   display: flex;
   align-items: baseline;
 }
-footer aside ul li i {
-  color: rgba(124, 40, 99);
+footer ul li i {
+  color: rgb(124, 40, 99);
   margin-right: 15px;
 }
-footer aside ul li h3 {
+footer ul li h3 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+/******************************
+        RESPONSIVE
+******************************/
+
+@media (min-width: 768px) and (max-width: 990px) {
+  main #services li:nth-of-type(odd) {
+    background-color: white;
+  }
+  main #services li {
+    width: 50%;
+  }
+  main #services li:nth-of-type(2),
+  main #services li:nth-of-type(3),
+  main #services li:nth-of-type(6) {
+    background-color: rgb(235, 235, 235);
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  /*********** menu mobile**********/
+  header nav {
+    background: rgb(124, 40, 99);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+  }
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    background: rgb(124, 40, 99);
+    padding: 10px;
+  }
+  header nav ul li {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  header nav #burger {
+    display: block;
+    appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  header nav #burger::before {
+    content: "\f0c9";
+  }
+  header nav #burger:checked::before {
+    content: "\f00d";
+  }
+  header nav #burger:checked + ul {
+    height: auto;
+  }
+
+  /*********************************/
+
+  main #fitclub {
+    background: black;
+    padding: 80px;
+  }
+  main #fitclub article {
+    width: 100%;
+  }
+  main #fitclub article h2 {
+    margin-left: 0;
+  }
+
+  main #objectives ul li {
+    width: 50%;
+  }
+
+  main #programs a {
+    width: 100%;
+  }
+
+  main #services li {
+    width: 100%;
+  }
+
+  footer > div > * {
+    width: 100%;
+  }
+
+  footer article {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  footer form {
+    order: -1;
+  }
 }
