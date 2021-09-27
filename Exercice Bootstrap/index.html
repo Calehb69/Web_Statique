@@ -9,76 +9,84 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="my-5">
         <!-- on rajoute une div avec la class container qui contient le contenu de façon à ce que le fond prenne toute la largeur mais que le contenu, lui, soit limité -->
         <div class="container">
-            <nav>
+            <nav class="d-flex justify-content-between align-items-center">
                 <a id="logo" href="#"><img src="img/logoblanc.svg" alt="logo vendeur de smoothies"></a>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="d-inline-block"><a class="text-decoration-none text-white mx-4" href="#">Produits</a>
+                    </li>
+                    <li class="d-inline-block"><a class="text-decoration-none text-white mx-4" href="#">Accueil</a></li>
+                    <li class="d-inline-block"><a class="text-decoration-none text-white mx-4" href="#">Contact</a></li>
+
                 </ul>
             </nav>
-            <h1>Fabriquants de smoothies bio</h1>
+            <h1 class="text-white">Fabriquants de smoothies bio</h1>
         </div>
     </header>
-    <section id="devise" class="container">
-        <img src="img/fond rose.jpg" alt="smoothie fruits">
-        <article>
-            <h2>Notre devise</h2>
-            Consequat dolore dolore pariatur veniam nulla proident. Do ut aute dolor id reprehenderit ut aliquip qui.
-            Voluptate ullamco non minim et. Sit amet cillum non quis amet esse sint ad nulla commodo exercitation cillum
-            anim.
-        </article>
+    <section id="devise" class="container my-5">
+
+        <div class="row align-items-center">
+            <img src="img/fond rose.jpg" class="col-12 col-md-4" alt="smoothie fruits">
+            <article class="col-12 col-md-8 text-center text-md-start mt-4 mt-md-0">
+                <h2 class="text-uppercase fw-bold">Notre devise</h2>
+                Consequat dolore dolore pariatur veniam nulla proident. Do ut aute dolor id reprehenderit ut aliquip
+                qui.
+                Voluptate ullamco non minim et. Sit amet cillum non quis amet esse sint ad nulla commodo exercitation
+                cillum
+                anim.
+            </article>
+        </div>
     </section>
-    <section id="fabrication">
-        <div class="container">
+    <section id="fabrication" class="container my-5">
+        <div class="text-white text-center pt-4 pb-5">
             <h2>Méthode de fabrication</h2>
             <ul>
                 <li>
-                    <img src="img/tree-02.png" alt="producteurs locaux">
-                    <h3>Nos producteurs récoltent les meilleurs fruits à la main</h3>
+                    <img src=" img/tree-02.png" class="mt-5" alt="producteurs locaux">
+                    <h3 class="mt-4">Nos producteurs récoltent les meilleurs fruits à la main</h3>
                 </li>
                 <li>
-                    <img src="img/bike-bmx.png" alt="transports écologiques">
-                    <h3>Nos fruits sont livrés par des méthodes de transport écologiques</h3>
+                    <img src="img/bike-bmx.png" class="mt-5" alt="transports écologiques">
+                    <h3 class="mt-4">Nos fruits sont livrés par des méthodes de transport écologiques</h3>
                 </li>
                 <li>
-                    <img src="img/chef.png" alt="faits maison">
-                    <h3>Nos smoothiers préparent vos smoothies à la demande et sous vos yeux</h3>
+                    <img src="img/chef.png" class="mt-5" alt="faits maison">
+                    <h3 class="mt-4">Nos smoothiers préparent vos smoothies à la demande et sous vos yeux</h3>
                 </li>
                 <li>
-                    <img src="img/juice.png" alt="terrasse">
-                    <h3>Vous dégustez votre smoothie sous l'ombre de nos palmiers</h3>
+                    <img src="img/juice.png" class="mt-5" alt="terrasse">
+                    <h3 class="mt-4">Vous dégustez votre smoothie sous l'ombre de nos palmiers</h3>
                 </li>
             </ul>
         </div>
     </section>
     <section id="items" class="container">
-        <h2>Le concept</h2>
-        <ul>
-            <li>
+        <h2 class="text-center mt-3">Le concept</h2>
+        <ul class="d-flex justify-content-between">
+            <li class="list-group-item ">
                 <img src="img/blender.png" alt="faits maison">
-                <h3>Pressés sur place</h3>
+                <h3 class="mt-4">Pressés sur place</h3>
                 <p>Ipsum qui adipisicing quis mollit nostrud laboris dolore.</p>
             </li>
             <li>
                 <img src="img/kiwi.png" alt="produits frais">
-                <h3>Produits frais</h3>
+                <h3 class="mt-4">Produits frais</h3>
                 <p>Ipsum qui adipisicing quis mollit nostrud laboris dolore.</p>
             </li>
             <li>
                 <img src="img/organic.png" alt="bios et locaux">
-                <h3>Produits bios et locaux</h3>
+                <h3 class="mt-4">Produits bios et locaux</h3>
                 <p>Ipsum qui adipisicing quis mollit nostrud laboris dolore.</p>
             </li>
         </ul>
     </section>
-    <footer>
+    <footer class="text-center">
         2019 © AH
     </footer>
 </body>
